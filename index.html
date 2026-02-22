@@ -222,18 +222,24 @@
 
         .banner {
             height: 100dvh;
-            padding: 0 20px;       /* remove padding-top */
+            padding: 40px 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: space-between;
             justify-content: center;
             align-items: center;
             text-align: center;
             }
-
+            
+        .banner-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            }
+            
         .banner-logo {
             width: 120px;              /* logo menor */
             margin-bottom: 20px;
-            top: 20px;
             }
 
         .banner h1 {
@@ -328,10 +334,13 @@
     
         <!-- Banner Principal -->
         <div class="banner">
-            <img src="logo.png" alt="Letícia Feltrin" class="banner-logo">
-          
-            <h1>LETÍCIA FELTRIN</h1>
-            <p>ADVOCACIA</p>
+
+            <div class="banner-top">
+                <img src="logo.png" alt="Letícia Feltrin" class="banner-logo">
+              
+                <h1>LETÍCIA FELTRIN</h1>
+                <p>ADVOCACIA</p>
+            </div>
 
             <a href="https://wa.me/+5543999244209?text=Ol%C3%A1,%20Dra.%20Let%C3%ADcia.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico." class="fale-conosco">
                 AGENDE SEU ATENDIMENTO
@@ -392,4 +401,5 @@
         </footer>
     
     </body>
+
 
