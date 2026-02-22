@@ -44,7 +44,7 @@
             background-size: cover;          /* faz a imagem cobrir toda a área */
             background-position: center;     /* centraliza a imagem */
             background-repeat: no-repeat;    /* evita repetição */
-            height: 800px;                   /* altura do banner */
+            height: 100dvh;                   /* altura do banner */
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -221,33 +221,27 @@
         @media (max-width: 768px) {
 
         .banner {
-            height: auto;              /* remove altura fixa */
-            min-height: 100vh;         /* ocupa tela inteira */
-            padding: 60px 20px;
+            height: 100dvh;
+            padding: 40px 20px;
             justify-content: center;
             }
 
         .banner-logo {
-            width: 100px;              /* logo menor */
+            width: 120px;              /* logo menor */
             margin-bottom: 20px;
             }
 
         .banner h1 {
-            font-size: 8vw;
-            letter-spacing: 2px;
-            line-height: 1.2;
+            font-size: clamp(28px, 8vw, 90px);
+            word-break: keep-all;
             }
 
         .banner p {
-            font-size: 16px;
-            letter-spacing: 3px;
-            margin-top: 12px;
+            font-size: clamp(14px, 3.5vw, 28px);
             }
 
         .fale-conosco {
-            padding: 12px 22px;
-            font-size: 13px;
-            margin-top: 25px;
+            font-size: clamp(12px, 2.5vw, 16px);
             }
 
         .banner-img-sobreposta {
@@ -261,6 +255,10 @@
             gap: 50px;
             padding: 70px 25px;
             text-align: left; /* importante */
+            }
+
+        .sobre-titulo {
+            font-size: clamp(24px, 5vw, 36px);
             }
 
         .sobre-esquerda {
@@ -284,13 +282,17 @@
             }
 
         .sobre-direita h2 {
-            font-size: 30px;
+            font-size: clamp(26px, 6vw, 60px);
             text-align: left;
             }
 
         .sobre-direita p {
             font-size: 16px;
             text-align: justify;
+            }
+
+        .sobre-texto {
+            font-size: clamp(15px, 2.5vw, 18px);
             }
 
             }
