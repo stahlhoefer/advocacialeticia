@@ -222,8 +222,12 @@
 
         .banner {
             height: 100dvh;
-            padding: 40px 20px;
+            padding: 0 20px;       /* remove padding-top */
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            text-align: center;
             }
 
         .banner-logo {
@@ -245,7 +249,7 @@
             }
 
         .banner-img-sobreposta {
-            height: 60%;
+            height: 40%;
             opacity: 0.35;             /* suaviza no mobile */
             }
 
