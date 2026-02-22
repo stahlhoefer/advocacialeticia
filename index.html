@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ================= META BÁSICO ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= SEO ================= -->
+    <title>Advogada Letícia Feltrin</title>
+    <meta name="description" content="Letícia Feltrin - Advogada Especialista Direito de Família, Divórcio, Partilha de Bens, Pensão Alimentícia e Guarda.">
+    <meta name="keywords" content="advogada, divórcio, divorcio, pensão, separação, violência doméstica, agressão, meu marido me agrediu">
+    <meta name="author" content="Letícia Feltrin">
+
+    <!-- Open Graph (para compartilhamento em redes sociais) -->
+    <meta property="og:title" content="Advogada Letícia Feltrin">
+    <meta property="og:description" content="Letícia Feltrin - Advogada Especialista Direito de Família, Divórcio, Partilha de Bens, Pensão Alimentícia e Guarda.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.advogadaleticiafeltrin.com.br">
+    <meta property="og:image" content="https://www.advogadaleticiafeltrin.com.br/imagem.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ================= CSS ================= -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            }
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            }
+        .banner {
+            background-image: url("fundo04.png"); /* coloque o nome da sua imagem aqui */
+            background-size: cover;          /* faz a imagem cobrir toda a área */
+            background-position: center;     /* centraliza a imagem */
+            background-repeat: no-repeat;    /* evita repetição */
+            height: 800px;                   /* altura do banner */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 120px; /* controla o quanto sobe */
+            align-items: center;
+            color: #ffffff;                  /* cor do texto */
+            font-family: 'Lexend Exa', sans-serif;
+            text-align: center;
+            position: relative;
+            }
+            /* Camada escura opcional para melhorar leitura do texto */
+        .banner::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(43, 37, 34, 0.719); /* escurece a imagem */
+            }
+
+        .banner h1,
+        .banner p {
+            position: relative;
+            z-index: 2;
+            }
+
+        .banner h1 {
+            font-weight: 400;
+            font-size: 90px;      /* aumenta tamanho */
+            letter-spacing: 0px; /* aumenta espaçamento */
+            margin: 0;
+            color: #f6f4f1;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.432);
+            }
+        
+        .banner p {
+            position: relative; /* mantém texto acima da camada escura */
+            font-weight: 600;
+            font-size: 28px;      /* aumenta tamanho */
+            letter-spacing: 6px; /* mais espaçamento */
+            margin-top: 20px;
+            color: #f6f4f1;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.432);
+            z-index: 1;
+            }
+
+        .banner-logo {
+            position: relative;
+            z-index: 3;              /* acima da camada escura */
+            width: 200px;            /* ajuste o tamanho aqui */
+            margin-bottom: 0px;     /* espaço entre logo e nome */
+            }
+
+        /* caixinha agende seu atendimento */
+        .fale-conosco {
+            position: relative;
+            z-index: 3;
+            display: inline-block;
+            margin-top: 40px;
+            padding: 14px 40px;
+            border: 1.5px solid #ffffff;  /* linha fina */
+            color: #f6f4f1;
+            text-decoration: none;
+            font-family: 'Lexend Exa', sans-serif;
+            font-weight: 600;
+            letter-spacing: 3px;
+            transition: all 0.3s ease;
+            }
+
+            /* Efeito elegante ao passar o mouse */
+        .fale-conosco:hover {
+            background-color: #ffffff;
+            color: #000000;
+            }
+
+            /* ===== IMAGEM SOBREPOSTA ===== */
+        .banner-img-sobreposta {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            max-height: 1000px;
+            filter: grayscale(100%);
+            z-index: 2;
+            object-fit: cover;
+            }
+
+        section {
+            padding: 40px 20px;
+            }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            }
+
+        /*================== SEGUNDO BLOCO ==============*/
+
+        .sobre {
+            background-color: #141a1a; /* azul bem escuro */
+            color: #eae6df;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 100px 10%;
+            position: relative;
+            flex-wrap: wrap;
+            }
+
+        /* Lado esquerdo */
+        .sobre-esquerda {
+            position: relative;
+            }
+
+        .sobre-foto {
+            width: 430px;
+            height: 466px;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            filter: grayscale(100%);
+            }
+
+        .sol-decorativo {
+            position: absolute;
+            top: -80px;      /* ajusta posição vertical */
+            left: -80px;     /* ajusta posição horizontal */
+            width: 250px;    /* controla tamanho */
+            z-index: 3;
+            }    
+
+        /* Lado direito */
+        .sobre-direita {
+            max-width: 600px;
+            }
+
+        .sobre-direita h2 {
+            font-size: 60px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            }
+
+        .sobre-direita p {
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            text-justify: inter-word;
+            }
+
+        .sobre-direita strong {
+            color: #ffffff;
+            }
+
+        .sobre-titulo {
+            font-family: 'Tenor Sans', sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            letter-spacing: 2px;
+            }
+
+        .sobre-texto {
+            font-family: 'Biryani', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            color: #d6d1c9; /* branco levemente acinzentado elegante */
+            }
+
+
+        /* ================= RESPONSIVO CELULAR ================= */
+        @media (max-width: 768px) {
+
+        .banner {
+            height: auto;              /* remove altura fixa */
+            min-height: 100vh;         /* ocupa tela inteira */
+            padding: 60px 20px;
+            justify-content: center;
+            }
+
+        .banner-logo {
+            width: 100px;              /* logo menor */
+            margin-bottom: 20px;
+            }
+
+        .banner p {
+            font-size: 16px;
+            letter-spacing: 3px;
+            margin-top: 12px;
+            }
+
+        .banner p {
+            font-size: 18px;
+            letter-spacing: 4px;
+            margin-top: 15px;
+            }
+
+        .fale-conosco {
+            padding: 12px 22px;
+            font-size: 13px;
+            margin-top: 25px;
+            }
+
+        .banner-img-sobreposta {
+            height: 60%;
+            opacity: 0.35;             /* suaviza no mobile */
+            }
+
+        /* SEGUNDO BLOCO */
+        .sobre {
+            flex-direction: column;
+            gap: 50px;
+            padding: 70px 25px;
+            text-align: left; /* importante */
+            }
+
+        .sobre-esquerda {
+            display: flex;
+            justify-content: center;
+            }
+
+        .sobre-foto {
+            width: 280px;
+            height: auto;
+            }
+
+        .sol-decorativo {
+            width: 180px;
+            top: -40px;
+            left: -40px;
+            }
+
+        .sobre-direita {
+            max-width: 100%;
+            }
+
+        .sobre-direita h2 {
+            font-size: 30px;
+            text-align: left;
+            }
+
+        .sobre-direita p {
+            font-size: 16px;
+            text-align: justify;
+            }
+
+            }
+
+
+    </style>
+</head>
+
+    <body>
+    
+        <!-- Banner Principal -->
+        <div class="banner">
+            <img src="logo.png" alt="Letícia Feltrin" class="banner-logo">
+          
+            <h1>LETÍCIA FELTRIN</h1>
+            <p>ADVOCACIA</p>
+
+            <a href="https://wa.me/+5543999244209?text=Ol%C3%A1,%20Dra.%20Let%C3%ADcia.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico." class="fale-conosco">
+                AGENDE SEU ATENDIMENTO
+            </a>
+
+            <img src="fundo-leticia.png" alt="Fundo" class="banner-img-sobreposta">
+        </div>
+
+        <section class="sobre">
+    
+            <div class="sobre-esquerda">
+                <img src="fundo-estrela.png" alt="" class="sol-decorativo">
+                <img src="sobre-foto.png" alt="Letícia" class="sobre-foto">
+            </div>
+        
+            <div class="sobre-direita">
+                <h2 class="sobre-titulo">Olá,<br>me chamo Letícia</h2>
+                <p class="sobre-texto">
+                    Possuo <strong>7 anos de experiência</strong> na área cível, com foco principalmente em ações de cunho familiar e direito das mulheres. Atuei por quatro anos como advogada do Núcleo Maria da Penha da Universidade Estadual de Maringá, desenvolvendo atendimento jurídico especializado a mulheres em situação de violência doméstica e familiar. Construí uma trajetória profissional sólida, pautada na ética, na técnica e na dedicação integral às necessidades de cada cliente.
+                </p>
+            </div>
+        
+        </section>
+
+        <!-- Cabeçalho / Menu -->
+        <header>
+            <h1>LETÍCIA FELTRIN</h1>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+    
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Aqui você pode escrever sobre sua missão, valores e quem você é. Use palavras claras que as pessoas procuram no Google para seu segmento.</p>
+        </section>
+    
+        <!-- Seção Serviços -->
+        <section id="servicos">
+            <h2>O Que Oferecemos</h2>
+            <p>Descreva seus serviços ou produtos, destacando os principais benefícios e termos importantes para SEO (ex.: “serviço de marketing digital”, “consultoria online”, etc).</p>
+        </section>
+    
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: seuemail@dominio.com</p>
+            <p>Telefone: (00) 00000-0000</p>
+        </section>
+    
+        <!-- Rodapé -->
+        <footer>
+            <p>© 2026 — Todos os direitos reservados.</p>
+            <p>Feito por Seu Nome ou Empresa</p>
+        </footer>
+    
+    </body>
