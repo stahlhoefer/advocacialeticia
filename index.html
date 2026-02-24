@@ -26,7 +26,6 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
             color: #333;
             }
 
@@ -39,19 +38,19 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding-top: 120px; /* controla o quanto sobe */
+            padding-top: 120px;
             align-items: center;
-            color: #ffffff;                  /* cor do texto */
+            color: #ffffff;
             font-family: 'Lexend Exa', sans-serif;
             text-align: center;
             position: relative;
             }
-            /* Camada escura opcional para melhorar leitura do texto */
+
         .banner::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(43, 37, 34, 0.719); /* escurece a imagem */
+            background: rgba(43, 37, 34, 0.719); 
             }
 
         .banner h1,
@@ -62,7 +61,7 @@
 
         .banner h1 {
             font-weight: 400;
-            font-size: clamp(2.2rem, 6vw, 5.6rem);
+            font-size: clamp(2.2rem, 5vw, 5.6rem);
             letter-spacing: 0.05em;
             margin: 0;
             color: #f6f4f1;
@@ -70,10 +69,10 @@
             }
         
         .banner p {
-            position: relative; /* mantém texto acima da camada escura */
+            position: relative;
             font-weight: 600;
-            font-size: 28px;      /* aumenta tamanho */
-            letter-spacing: 6px; /* mais espaçamento */
+            font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+            letter-spacing: 6px;
             margin-top: 20px;
             color: #f6f4f1;
             text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.432);
@@ -82,19 +81,18 @@
 
         .banner-logo {
             position: relative;
-            z-index: 3;              /* acima da camada escura */
-            width: 200px;            /* ajuste o tamanho aqui */
-            margin-bottom: 0px;     /* espaço entre logo e nome */
+            z-index: 3;
+            width: 200px;
+            margin-bottom: 0px;
             }
 
-        /* caixinha agende seu atendimento */
         .fale-conosco {
             position: relative;
             z-index: 3;
             display: inline-block;
             margin-top: 40px;
             padding: 14px 40px;
-            border: 1.5px solid #ffffff;  /* linha fina */
+            border: 1.5px solid #ffffff;
             color: #f6f4f1;
             text-decoration: none;
             font-family: 'Lexend Exa', sans-serif;
@@ -103,19 +101,17 @@
             transition: all 0.3s ease;
             }
 
-            /* Efeito elegante ao passar o mouse */
         .fale-conosco:hover {
             background-color: #ffffff;
             color: #000000;
             }
 
-            /* ===== IMAGEM SOBREPOSTA ===== */
         .banner-img-sobreposta {
             position: absolute;
             right: 0;
             bottom: 0;
             height: 100%;
-            max-height: 1000px;
+            max-height: clamp(54rem, 70vh, 70rem);
             filter: grayscale(100%);
             z-index: 2;
             object-fit: cover;
@@ -132,7 +128,7 @@
         /*================== SEGUNDO BLOCO ==============*/
 
         .sobre {
-            background-color: #141a1a; /* azul bem escuro */
+            background-color: #141a1a;
             color: #eae6df;
             display: flex;
             align-items: center;
@@ -149,8 +145,9 @@
             }
 
         .sobre-foto {
-            width: 430px;
-            height: 466px;
+            width: 100%;
+            max-width: 430px;
+            height: auto;
             object-fit: cover;
             position: relative;
             z-index: 2;
@@ -171,14 +168,14 @@
             }
 
         .sobre-direita h2 {
-            font-size: 60px;
+            font-size: clamp(2rem, 5vw, 3.75rem);
             font-weight: 400;
             margin-bottom: 30px;
             line-height: 1.2;
             }
 
         .sobre-direita p {
-            font-size: 20px;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
             line-height: 1.8;
             text-align: justify;
             text-justify: inter-word;
@@ -191,14 +188,14 @@
         .sobre-titulo {
             font-family: 'Tenor Sans', sans-serif;
             font-weight: 400;
-            font-size: 36px;
+            font-size: clamp(2rem, 5vw, 3.75rem);
             letter-spacing: 2px;
             }
 
         .sobre-texto {
             font-family: 'Biryani', sans-serif;
             font-weight: 400;
-            font-size: 18px;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
             line-height: 1.8;
             letter-spacing: 0.5px;
             color: #d6d1c9;
@@ -224,14 +221,14 @@
             }
 
         .objetivo-esquerda h2 {
-            font-size: 60px;
+            font-size: clamp(2rem, 5vw, 3.75rem);
             font-weight: 400;
             margin-bottom: 30px;
             line-height: 1.2;
             }
 
         .objetivo-esquerda p {
-            font-size: 20px;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
             line-height: 1.8;
             text-align: justify;
             text-justify: inter-word;
@@ -244,14 +241,14 @@
         .objetivo-titulo {
             font-family: 'Tenor Sans', sans-serif;
             font-weight: 400;
-            font-size: 36px;
+            font-size: clamp(2rem, 5vw, 3.75rem);
             letter-spacing: 2px;
             }
 
         .objetivo-texto {
             font-family: 'Biryani', sans-serif;
             font-weight: 400;
-            font-size: 18px;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
             line-height: 1.8;
             letter-spacing: 0.5px;
             color: #d6d1c9;
@@ -280,6 +277,144 @@
             z-index: 3;
             }
 
+        /* ================= SERVIÇOS ================= */
+
+        .servicos {
+            background: #f0ebe1;
+            padding: 30px 15px;
+            }
+
+        /* TOPO (estrela + título + estrela) */
+        .servicos-topo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 80px;
+            }
+
+        .servicos-topo h1 {
+            font-size: clamp(2rem, 5vw, 3.75rem);
+            font-weight: 500;
+            color: #050d18;
+            text-align: center;
+            font-family: 'Tenor Sans', sans-serif;
+            letter-spacing: 2px;
+            }
+
+        .estrela {
+            width: 90px;
+            }
+
+        /* GRID DAS COLUNAS */
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            }
+
+        /* CARD INDIVIDUAL */
+        .servico {
+            text-align: center;
+            }
+
+        /* IMAGEM OVAL */
+        .servico-img {
+            width: 100%;
+            max-width: auto;
+            height: 200px;
+            object-fit: auto;
+            border-radius: 50% / 30%;
+            margin-bottom: 30px;
+            filter: grayscale(100%);
+        }
+
+        /* SUBTÍTULO */
+        .servico h1 {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            margin-bottom: 20px;
+            font-family: 'Biryani', sans-serif;
+            }
+
+        /* TEXTO */
+        .servico p {
+            font-size: (1rem, 2vw, 1.125rem);
+            line-height: 1.7;
+            max-width: 350px;
+            margin: 0 auto;
+            font-family: 'Biryani', sans-serif;
+            letter-spacing: 0.5px;
+            color: #050d18;
+            }
+
+        .lista-servico {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'Biryani', sans-serif;
+            font-size: 18px;
+            color: #050d18;
+            padding-left: 25px;
+            line-height: 1.7; 
+            }
+
+        .lista-servico li {
+            text-align: center;
+            margin-bottom: 0px;
+            }
+
+        .lista-servico li::before {
+            content: "•";
+            left: 0px
+            }
+
+        .servicos-rodape {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            }
+
+        .servicos-rodape h1 {
+            font-size: 60px;
+            font-weight: 500;
+            color: #050d18;
+            text-align: center;
+            font-family: 'Tenor Sans', sans-serif;
+            letter-spacing: 2px;
+            }
+
+        .rodape-img {
+            height: 400px;
+            margin-bottom: 30px;
+            filter: grayscale(100%);
+            text-align: center;
+            }
+
+        .fale-conosco-rodape {
+            position: relative;
+            z-index: 3;
+            display: inline-block;
+            margin-top: 40px;
+            padding: 14px 40px;
+            border: 1.5px solid #f6f4f1;
+            background-color: rgba(0, 0, 0, 0.877);
+            color: #f6f4f1;
+            text-decoration: none;
+            font-family: 'Lexend Exa', sans-serif;
+            font-weight: 600;
+            letter-spacing: 3px;
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+            }
+
+        .fale-conosco-rodape:hover {
+            background-color: #f6f4f1;
+            color: #000000;
+            }
+
         /* ================= RESPONSIVO CELULAR ================= */
         @media (max-width: 768px) {
 
@@ -301,24 +436,24 @@
             }
             
         .banner-logo {
-            width: 120px;    /* logo menor */
+            width: 120px;
             margin-bottom: 20px;
             }
 
         .banner h1 {
-            font-size: clamp(28px, 8vw, 90px);
+            font-size: clamp(1.5rem, 7vw, 3rem);
             word-break: keep-all;
             }
 
         .banner p {
-            font-size: clamp(14px, 3.5vw, 28px);
+            font-size: clamp(0.875rem, 3vw, 1.75rem);
             }
 
         .fale-conosco {
-                margin-top: auto;  /* empurra ele para baixo */
+                margin-top: auto;
                 margin-bottom: 10vh;
-                background-color: rgba(0, 0, 0, 0.45); /* preto com transparência */
-                backdrop-filter: blur(4px); /* efeito vidro elegante */
+                background-color: rgba(0, 0, 0, 0.45);
+                backdrop-filter: blur(4px);
                 -webkit-backdrop-filter: blur(4px);
             }
 
@@ -350,14 +485,10 @@
             flex-direction: column;
             gap: 50px;
             padding: 70px 25px;
-            text-align: left; /* importante */
+            text-align: left;
             }
 
         /* LADO ESQUERDO*/
-
-        .sobre-titulo {
-            font-size: clamp(24px, 5vw, 36px);
-            }
 
         .sobre-esquerda {
             display: flex;
@@ -382,17 +513,21 @@
             }
 
         .sobre-direita h2 {
-            font-size: clamp(26px, 6vw, 60px);
+            font-size:  clamp(3rem, 6vw, 5rem);
             text-align: left;
             }
 
         .sobre-direita p {
-            font-size: 16px;
+            font-size: clamp(1rem, 3vw, 2rem);
             text-align: justify;
             }
 
+        .sobre-titulo {
+            font-size: clamp(3rem, 6vw, 5rem);
+            }
+
         .sobre-texto {
-            font-size: clamp(15px, 2.5vw, 18px);
+            font-size: clamp(1rem, 3vw, 2rem);
             }
 
         /* TERCEIRO BLOCO */
@@ -410,21 +545,21 @@
             }
 
         .objetivo-esquerda h2 {
-            font-size: clamp(26px, 6vw, 60px);
+            font-size:  clamp(3rem, 6vw, 5rem);
             text-align: left;
             }
 
         .objetivo-esquerda p {
-            font-size: 16px;
+            font-size: clamp(1rem, 3vw, 2rem);
             text-align: justify;
             }
 
         .objetivo-titulo {
-            font-size: clamp(24px, 5vw, 36px);
+            font-size:  clamp(3rem, 6vw, 5rem);
             }
 
         .objetivo-texto {
-            font-size: clamp(15px, 2.5vw, 18px);
+            font-size: clamp(1rem, 3vw, 2rem);
             }
 
         /* LADO DIREITO*/
@@ -443,6 +578,55 @@
             width: 180px;
             top: -40px;
             left: -40px;
+            }
+
+        /* QUARTO BLOCO */
+
+        .servicos-topo {
+            gap: 20px;
+            margin-bottom: 50px;
+            }
+
+        .servicos-topo h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            letter-spacing: 1px;
+            }
+
+        .estrela {
+            width: 50px;
+            }
+
+        .servicos-grid {
+            grid-template-columns: 1fr;
+            gap: 50px;
+            }
+
+        .servico-img {
+            height: 160px;
+            width: auto;
+            }
+
+        .servico h1 {
+            font-size: clamp(2rem, 3vw, 2.5rem);
+            margin-bottom: 15px;
+            }
+
+        .servico p,
+        .lista-servico {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            max-width: 100%;
+            }
+
+        .rodape-img {
+            height: 300px;
+            width: auto;
+            object-fit: cover;
+            }
+
+        .fale-conosco-rodape {
+            padding: 12px 28px;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            letter-spacing: 2px;
             }
 
             }
@@ -471,17 +655,17 @@
 
         <!-- SOBRE -->
         <section class="sobre">
-    
-            <div class="sobre-esquerda">
-                <img src="fundo-estrela.png" alt="" class="sol-decorativo">
-                <img src="sobre-foto.png" alt="Letícia" class="sobre-foto">
-            </div>
         
             <div class="sobre-direita">
                 <h2 class="sobre-titulo">Olá,<br>me chamo Letícia</h2>
                 <p class="sobre-texto">
                     Possuo <strong>7 anos de experiência</strong> na área cível, com foco principalmente em ações de cunho familiar e direito das mulheres. Atuei por quatro anos como advogada do Núcleo Maria da Penha da Universidade Estadual de Maringá, desenvolvendo atendimento jurídico especializado a mulheres em situação de violência doméstica e familiar. Construí uma trajetória profissional sólida, pautada na ética, na técnica e na dedicação integral às necessidades de cada cliente.
                 </p>
+            </div>
+
+            <div class="sobre-esquerda">
+                <img src="fundo-estrela.png" alt="" class="sol-decorativo">
+                <img src="sobre-foto.png" alt="Letícia" class="sobre-foto">
             </div>
 
         </section>
@@ -501,6 +685,76 @@
                 <img src="objetivo-foto.png" alt="Letícia Feltrin" class="objetivo-foto">
                 <img src="fundo-estrela.png" class="sol-decorativo-objetivo">
             </div>
+        
+        </section>
+
+        <!-- SERVIÇOS -->
+
+        <section class="servicos">
+
+            <div class="servicos-topo">
+                <img src="estrela.png" class="estrela" alt="">
+                <h1>Serviços oferecidos</h1>
+                <img src="estrela.png" class="estrela" alt="">
+            </div>
+        
+            <div class="servicos-grid">
+        
+                <div class="servico">
+                    <img src="servico-1.png" alt="" class="servico-img">
+                    <h1>Direito das mulheres</h1>
+                    <p>
+                        <ul class="lista-servico">
+                            <li> Medidas protetivas de urgência</li> 
+                            <li> Acompanhamento em casos de violência doméstica e psicológica</li> 
+                            <li> Divórcio com histórico de violência</li> 
+                            <li> Alienação parental</li> 
+                            <li> Auxiliar de acusação em ações criminais de violência doméstica</li> 
+                            <li> Danos morais em contexto de violência ou exposição indevida</li> 
+                        </ul>
+                    </p>
+                </div>
+        
+                <div class="servico">
+                    <img src="servico-2.png" alt="" class="servico-img">
+                    <h1>Direito das famílias</h1>
+                    <p>
+                        <ul class="lista-servico">
+                            <li> Divórcio judicial e extrajudicial</li> 
+                            <li> Guarda e regulamentação de convivência</li> 
+                            <li> Pensão alimentícia</li> 
+                            <li> Reconhecimento e dissolução de união estável</li> 
+                            <li> Partilha de bens</li> 
+                            <li> Investigação e reconhecimento de paternidade</li> 
+                            <li> Planejamento patrimonial familiar</li> 
+                        </ul>
+                    </p>
+                </div>
+        
+                <div class="servico">
+                    <img src="servico-3.png" alt="" class="servico-img">
+                    <h1>Direito civil</h1>
+                    <p>
+                        <ul class="lista-servico">
+                            <li> Responsabilidade civil e indenizações</li> 
+                            <li> Danos morais e materiais</li> 
+                            <li> Elaboração e revisão de contratos</li> 
+                            <li> Cobranças judiciais e extrajudiciais</li> 
+                            <li> Obrigações contratuais</li> 
+                            <li> Direito do consumidor</li> 
+                            <li> Posse e propriedade</li> 
+                            <li> Notificações extrajudiciais</li> 
+                        </ul>
+                    </p>
+                </div>
+        
+            </div>
+
+            <div class="servicos-rodape">
+                <a href="https://wa.me/+5543999244209?text=Ol%C3%A1,%20Dra.%20Let%C3%ADcia.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico." class="fale-conosco-rodape">
+                    AGENDE SEU ATENDIMENTO
+                </a>
+                <img src="rodape.png" class="rodape-img" alt="">
         
         </section>
     
